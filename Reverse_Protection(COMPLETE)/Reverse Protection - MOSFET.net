@@ -1,0 +1,12 @@
+* C:\Users\mkebbi\Documents\EAGLE\projects\Reverse_Protection(COMPLETE)\Reverse Protection - MOSFET.asc
+M1 In G Out Out HAT1072H
+R1 G 0 10k
+V1 In 0 PULSE(+24v -24V 1ms 1ms 1ms .5ms)
+RL Out 0 1.5
+R3 Out G 10k
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\mkebbi\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 4ms
+.backanno
+.end
