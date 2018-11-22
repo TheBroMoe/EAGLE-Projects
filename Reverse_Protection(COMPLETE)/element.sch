@@ -2490,7 +2490,7 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BZX55" device="" package3d_urn="urn:adsk.eagle:package:43342/1">
+<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BZX55" device="" package3d_urn="urn:adsk.eagle:package:43342/1" value="1N5250BTR">
 <attribute name="MF" value="FAIRCHILD SEMICONDUCTOR"/>
 <attribute name="MPN" value="BZX79C4V7"/>
 <attribute name="OC_NEWARK" value="18C5987"/>
