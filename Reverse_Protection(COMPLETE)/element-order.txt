@@ -1,0 +1,7 @@
+Order list for C:/Users/mkebbi/Documents/EAGLE/projects/Reverse_Protection(COMPLETE)/element.sch
+Exported from EAGLE with DesignLink
+
+Quantity	Value	Package	Order code	Manufacturer	Manuf. Code	Availability	Price (from)	Description
+1	BZX55	DO35Z10	18C5987	FAIRCHILD SEMICONDUCTOR	BZX79C4V7	33999	0.018	ON SEMICONDUCTOR - BZX79C4V7 - ZENER DIODE, 500mW, 4.7V, DO-35
+1	Si7145DP	C370-01	63R6006		SI7145DP-T1-GE3	7204	1.08	VISHAY - SI7145DP-T1-GE3 - MOSFET Transistor
+1	10k	R0805	68R0049		RC0603FR-0710KL	201412	0.0060	YAGEO - RC0603FR-0710KL - RES, THICK FILM, 10K, 1%, 0.1W, 0603
