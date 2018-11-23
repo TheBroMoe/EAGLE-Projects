@@ -2380,6 +2380,93 @@ www.irf.com&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="diode" urn="urn:adsk.eagle:library:210">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DO35Z10" urn="urn:adsk.eagle:footprint:43098/1" library_version="2">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2 mm, horizontal, grid 10.16mm</description>
+<wire x1="5.08" y1="0" x2="4.191" y2="0" width="0.508" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-4.191" y2="0" width="0.508" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="1.016" x2="2.286" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="0.762" x2="-2.032" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="-0.762" x2="-2.032" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.032" y1="-1.016" x2="2.286" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.286" y1="0.762" x2="2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="0.762" x2="-2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.016" x2="2.032" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-1.016" x2="2.032" y2="-1.016" width="0.1524" layer="21"/>
+<pad name="C" x="-5.08" y="0" drill="0.8128" shape="long"/>
+<pad name="A" x="5.08" y="0" drill="0.8128" shape="long"/>
+<text x="-2.286" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.286" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.905" y1="-1.016" x2="-1.397" y2="1.016" layer="21"/>
+<rectangle x1="2.286" y1="-0.254" x2="4.191" y2="0.254" layer="21"/>
+<rectangle x1="-4.191" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="DO35Z10" urn="urn:adsk.eagle:package:43342/1" type="box" library_version="2">
+<description>DIODE
+diameter 2 mm, horizontal, grid 10.16mm</description>
+<packageinstances>
+<packageinstance name="DO35Z10"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="ZD" urn="urn:adsk.eagle:symbol:43096/1" library_version="2">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<text x="-1.778" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.778" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BZX55" urn="urn:adsk.eagle:component:43477/1" prefix="D" library_version="2">
+<description>&lt;b&gt;Z DIODE&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="ZD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO35Z10">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43342/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2390,24 +2477,50 @@ www.irf.com&lt;p&gt;
 </class>
 </classes>
 <parts>
-<part name="R1" library="adafruit" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="R2" library="adafruit" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="FLIP" library="transistor-small-signal" library_urn="urn:adsk.eagle:library:401" deviceset="IRFD9120" device="" package3d_urn="urn:adsk.eagle:package:29750/1"/>
+<part name="R1" library="adafruit" deviceset="R-US_" device="R0805" value="10k">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="RC0603FR-0710KL"/>
+<attribute name="OC_NEWARK" value="68R0049"/>
+</part>
+<part name="FLIP" library="transistor-small-signal" library_urn="urn:adsk.eagle:library:401" deviceset="IRFD9120" device="" package3d_urn="urn:adsk.eagle:package:29750/1" value="Si7145DP">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="SI7145DP-T1-GE3"/>
+<attribute name="OC_NEWARK" value="63R6006"/>
+</part>
 <part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BZX55" device="" package3d_urn="urn:adsk.eagle:package:43342/1">
+<attribute name="MF" value="FAIRCHILD SEMICONDUCTOR"/>
+<attribute name="MPN" value="BZX79C4V7"/>
+<attribute name="OC_NEWARK" value="18C5987"/>
+</part>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="0" y="-10.16" size="1.778" layer="91">BATTERY_IN</text>
+<text x="58.42" y="-12.7" size="1.778" layer="91">BATTERY_OUT</text>
 </plain>
 <instances>
-<instance part="R1" gate="G$1" x="27.94" y="-17.78" rot="R90"/>
-<instance part="R2" gate="G$1" x="40.64" y="-12.7" rot="R180"/>
-<instance part="FLIP" gate="A" x="27.94" y="-5.08" rot="MR90"/>
+<instance part="R1" gate="G$1" x="27.94" y="-17.78" rot="R90">
+<attribute name="OC_NEWARK" x="27.94" y="-17.78" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="27.94" y="-17.78" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="27.94" y="-17.78" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FLIP" gate="A" x="27.94" y="-5.08" rot="MR90">
+<attribute name="OC_NEWARK" x="27.94" y="-5.08" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="27.94" y="-5.08" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="27.94" y="-5.08" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="X_1" gate="G$1" x="15.24" y="-25.4"/>
 <instance part="X_2" gate="G$1" x="27.94" y="-27.94"/>
 <instance part="X_3" gate="G$1" x="55.88" y="-22.86"/>
+<instance part="D1" gate="1" x="40.64" y="-12.7">
+<attribute name="OC_NEWARK" x="40.64" y="-12.7" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="40.64" y="-12.7" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="40.64" y="-12.7" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2438,9 +2551,9 @@ www.irf.com&lt;p&gt;
 <pinref part="FLIP" gate="A" pin="G"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="-10.16" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="-12.7" x2="35.56" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-12.7" x2="38.1" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="27.94" y="-12.7"/>
+<pinref part="D1" gate="1" pin="A"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -2449,9 +2562,10 @@ www.irf.com&lt;p&gt;
 <wire x1="33.02" y1="-2.54" x2="45.72" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-2.54" x2="55.88" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="-7.62" x2="55.88" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="-12.7" x2="45.72" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="45.72" y="-2.54"/>
+<pinref part="D1" gate="1" pin="C"/>
+<wire x1="43.18" y1="-12.7" x2="45.72" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

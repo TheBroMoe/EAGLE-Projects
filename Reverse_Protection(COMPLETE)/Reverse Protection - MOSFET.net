@@ -1,9 +1,9 @@
 * C:\Users\mkebbi\Documents\EAGLE\projects\Reverse_Protection(COMPLETE)\Reverse Protection - MOSFET.asc
 M1 In G Out Out Si7143DP
 R1 G 0 10k
-V1 In 0 PULSE(+24v -24V 1ms 1ms 1ms .5ms)
+V1 In 0 PULSE(+25v -25v 1ms 1ms 1ms .5ms)
 RL Out 0 1.5
-D1 G Out UMZ30K
+D1 G Out TFZ20B
 .model D D
 .lib C:\Users\mkebbi\Documents\LTspiceXVII\lib\cmp\standard.dio
 .model NMOS NMOS
